@@ -10,3 +10,4 @@ RUN rm -f /var/www/html/rubedo.tar.gz
 # Create volume
 VOLUME /var/www/html
 VOLUME /var/lib/mongo
+CMD ["/bin/bash"]
