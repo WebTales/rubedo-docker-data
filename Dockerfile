@@ -1,6 +1,6 @@
 # Rubedo data dockerfile
 FROM centos:centos7
-RUN yum install -y wget tar
+RUN yum install -y wget tar; yum -y clean all
 # Get rubedo sources
 RUN mkdir -p /var/www/html
 RUN mkdir -p /var/lib/mongo
