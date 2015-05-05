@@ -7,6 +7,7 @@ if [ ! -d /var/rubedo_sources ]; then
     chmod 644 /root/.ssh/known_hosts
     git clone -b 3.1.x https://github.com/WebTales/rubedo.git /var/www/html/rubedo
 else
+    echo "coping Rubedo"
     cp -R /var/rubedo_sources /var/www/html/rubedo
 fi
 
